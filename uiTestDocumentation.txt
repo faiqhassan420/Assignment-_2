@@ -1,0 +1,20 @@
+-> The language used for UI Automation is Xml. -> The have done UI autonmtion for the multiple components of the website.
+ -> They have use xml version 1.o for the testing. 
+-> For automation in this language multiple keywords are used such as annotation,assertions,actions,actiongroup.
+
+Following is the link of one automation done in the website : 
+magento2/app/code/Magento/Ui/Test/Mftf/ActionGroup/AdminGridAssertTotalPageCountActionGroup.xml
+
+Following is the code:
+Assert total page count on admin grid
+
+    <waitForElementVisible selector="{{AdminDataGridPaginationSection.totalPagesCount('expectedTotalPageCount')}}" stepKey="waitForTotalPagesCountToBeVisible"/>
+</actionGroup>
+-> First they use the actiongroup in which link is stored.
+It is done for reusability purposes. 
+-> Here is annotation also used, its sole purpose is to specify schema components. 
+-> An argument is what you pass into a function (also known as a subroutine). Arguments are also known as parameters.
+ A function might take an argument and use it to calculate something or modify the argument itself. 
+-> .waitForElementVisible () Suggest edits Waits a given time in milliseconds (default 5000ms) for an element to be visible in the page before performing any other commands or assertions. 
+If the element fails to be present and visible in the specified amount of time, the test fails.
+
